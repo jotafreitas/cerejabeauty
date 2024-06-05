@@ -1,0 +1,94 @@
+/* Cores Primárias e Secundárias */
+:root {
+    --primary-color: #ffdfdf;
+    --secondary-color: #a89595;
+    --white-color: #ffffff;
+}
+
+/* Estilos do Cabeçalho */
+.header .navbar {
+    background-color: var(--primary-color);
+}
+
+.header .navbar-brand .logo {
+    width: 50px;
+}
+
+.header .nav-link {
+    color: var(--secondary-color) !important;
+}
+
+/* Estilos da Imagem Parallax */
+#parallax-section {
+    position: relative;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.parallax {
+    background-image: url('./img/logocereja.png');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.caption h1 {
+    font-size: 4rem;
+    color: var(--white-color);
+}
+
+.caption p {
+    font-size: 1.5rem;
+    color: var(--white-color);
+}
+
+/* Estilos dos Cards */
+.card {
+    border: none;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-body .card-title {
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+}
+
+/* Estilos de Animação */
+.container .row {
+    opacity: 1;
+    transform: translateX(-50px);
+    transition: all 0.5s ease-in-out;
+}
+
+.container .row.appear {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Estilos do Footer */
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: 1rem 0;
+}
+
+.footer .social-icon {
+    width: 30px;
+    margin: 0 10px;
+}
