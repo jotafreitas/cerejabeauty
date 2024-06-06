@@ -3,11 +3,13 @@
     --primary-color: #ffdfdf;
     --secondary-color: #a89595;
     --white-color: #ffffff;
+    --gradient-color: #e085b6;
+    --hover-color: #df6095;
 }
 
 /* Estilos do Cabeçalho */
 .header .navbar {
-    background-color: var(--primary-color);
+    background: linear-gradient(5deg, var(--primary-color), var(--gradient-color));
 }
 
 .header .navbar-brand .logo {
@@ -15,7 +17,11 @@
 }
 
 .header .nav-link {
-    color: var(--secondary-color) !important;
+    color: var(--white-color) !important;
+}
+
+.header .nav-link:hover {
+    color: var(--hover-color) !important;
 }
 
 /* Estilos da Imagem Parallax */
@@ -28,7 +34,7 @@
 }
 
 .parallax {
-    background-image: url('./img/logocereja.png');
+    background-image: url('./img/heroimagedois.png');
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -67,6 +73,7 @@
 .card-body .card-title {
     color: var(--secondary-color);
     font-size: 1.25rem;
+    
 }
 
 /* Estilos de Animação */
